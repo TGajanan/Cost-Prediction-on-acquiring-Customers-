@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Impact Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div> -->
+  <!-- </section>End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Cost Predict<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/prediction">Predict</a></li>
+            <li><a href="#services">result</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> -->
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Cost Prediction on acquiring Customers</h2>
+
+          <!-- <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p> -->
+        <div class="row gy-4">
+          <!-- <div class="col-lg-6"> -->
+            <div class="form-box" >
+              <form action="/prediction" method="POST">
+                  <div class="form-group">
+                      <label for="store_sqft">store_sqft:</label>
+                      <input type="number" size="10" id="carat" name="store_sqft" placeholder="Enter store_sqft" min="20000" max="40000" >
+                  </div><br>
+                  <div class="form-group">
+                      <label for="grocery_sqft">grocery_sqft:</label>
+                      <input type="number" id="depth" name="grocery_sqft" placeholder="Enter grocery_sqft" min="10000" max="30000">
+                  </div><br>
+                  <div class="form-group">
+                    <label for="units_per_case">units_per_case:</label>
+                    <input type="number" id="y" name="units_per_case" placeholder="Enter units_per_case" min="1" max="36">
+                </div><br>
+                <div class="form-group">
+                    <label for="net_weight">net_weight:</label>
+                    <input type="number" id="z" step="any" name="net_weight" placeholder="Enter net_weight" min="3" max="20">
+                </div><br>
+                <div class="form-group">  
+                      <label for="brand_name">brand_name:</label>
+                      <select id="cut" name="brand_name">
+                          <option value="90">BBB Best </option>
+                          <option value="69">Discover</option>
+                          <option value="36">Washington</option>
+                          <option value="3">Amigo</option>
+                          <option value="84">Queen</option>
+                          <option value="48">Big Time</option>
+                          <option value="68">American</option>
+                          <option value="106">Big City</option>
+                          <option value="20">Carrington</option>
+                          <option value="67">Dual City</option>
+                      </select>
+                  </div><br>
+                  <div class="form-group">
+                      <label for="food_category">food_category:</label>
+                      <select id="cut" name="food_category">
+                        <option value="0">Baking Goods </option>
+                        <option value="1">Bathroom Products</option>
+                        <option value="4">Breakfast Foods</option>
+                        <option value="17">Dairy</option>
+                        <option value="22">Frozen Desserts</option>
+                        <option value="15">Cleaning Supplies</option>
+                        <option value="19">Drinks</option>
+                        <option value="26">Hot Beverages</option>
+                        <option value="29">Kitchen Products</option>
+                        <option value="37">Plastic Products</option>
+                      </select>
+                      <!-- <input type="text" id="x" name="food_category" placeholder="Enter food_category"> -->
+                  </div><br>
+                  <div class="form-group">
+                    <label for="promotion_name">promotion_name:</label>
+                    <select id="cut" name="promotion_name">
+                      <option value="38">Best Savings </option>
+                      <option value="43">Big Time Savings</option>
+                      <option value="6">Double Down Sale </option>
+                      <option value="33">Bye Bye Baby </option>
+                      <option value="4">Green Light Days </option>
+                      <option value="44">Big Time Discounts</option>
+                      <option value="32">Coupon Spectacular</option>
+                      <option value="2">Dollar Cutters</option>
+                      <option value="47">Shelf Clearing Days</option>
+                      <option value="19">Tip Top Savings</option>
+                    </select>
+                    <!-- <input type="text" id="x" name="food_category" placeholder="Enter food_category"> -->
+                  </div><br>
+                      <div class="form-group">
+                      <label for="store_city">store_city:</label>
+                      <select id="cut" name="store_city">
+                          <option value="7">Los Angeles</option>
+                          <option value="9">Mexico City </option>
+                          <option value="12">Victoria </option>
+                          <option value="11">Portland</option>
+                          <option value="12">San Francisco </option>
+                          <option value="2">Beverly Hills </option>
+                          <option value="16">Tacoma </option>
+                          <option value="6">Hidalgo </option>
+                      </select>
+                      </div><br>
+                      <div style="clear:both;"></div>
+                      <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+      </div>
+          <!-- <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+
+                 <div class="position-relative mt-4"> -->
+                <!-- <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt=""> -->
+                <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+              <!-- </div> -->
+            </div> 
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Contact with us</span>
+          </a>
+          <p>Er. Gajanan s Todeti </p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

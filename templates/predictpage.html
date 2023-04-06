@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cost Prediction on acquiring Customers</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <!-- <a href="https://github.com/utkarshg1/mlproject_regression" class="top-left-link" target="_blank">GitHub Repository Link</a> -->
+    <h1 style="color: brown;">Cost Prediction on acquiring Customers</h1>
+    <!-- <img src="{{url_for('static', filename='/Image/your_profile_pic.jpg')}}" alt="Your Profile Picture" class="profile"> -->
+    <div class="form-box">
+    <form action="/prediction" method="POST">
+        <div class="form-group">
+            <label for="store_sqft">store_sqft:</label>
+            <input type="number" size="10" id="carat" name="store_sqft" placeholder="Enter store_sqft" min="20000" max="40000" >
+        </div>
+    
+        <div class="form-group">
+            <label for="grocery_sqft">grocery_sqft:</label>
+            <input type="number" id="depth" name="grocery_sqft" placeholder="Enter grocery_sqft" min="10000" max="30000">
+        </div>
+
+        <div class="form-group">
+          <label for="units_per_case">units_per_case:</label>
+          <input type="number" id="y" name="units_per_case" placeholder="Enter units_per_case" min="1" max="36">
+      </div>
+    
+      <div class="form-group">
+          <label for="net_weight">net_weight:</label>
+          <input type="number" id="z" step="any" name="net_weight" placeholder="Enter net_weight" min="3" max="20">
+      </div>  
+
+
+        <div class="form-group">  
+            <label for="brand_name">brand_name:</label>
+            <select id="cut" name="brand_name">
+              <option value="90">BBB Best </option>
+              <option value="69">Discover</option>
+              <option value="36">Washington</option>
+              <option value="3">Amigo</option>
+              <option value="84">Queen</option>
+              <option value="48">Big Time</option>
+              <option value="68">American</option>
+              <option value="106">Big City</option>
+              <option value="20">Carrington</option>
+              <option value="67">Dual City</option>
+            </select>
+            <!-- <input type="text" id="table" name="brand_name" placeholder="Enter brand_name"> -->
+        </div>
+        
+        <div class="form-group">
+            <label for="food_category">food_category:</label>
+            <select id="cut" name="food_category">
+              <option value="0">Baking Goods </option>
+              <option value="1">Bathroom Products</option>
+              <option value="4">Breakfast Foods</option>
+              <option value="17">Dairy</option>
+              <option value="22">Frozen Desserts</option>
+              <option value="15">Cleaning Supplies</option>
+              <option value="19">Drinks</option>
+              <option value="26">Hot Beverages</option>
+              <option value="29">Kitchen Products</option>
+              <option value="37">Plastic Products</option>
+            </select>
+            <!-- <input type="text" id="x" name="food_category" placeholder="Enter food_category"> -->
+        </div>
+
+        <div class="form-group">
+          <label for="promotion_name">promotion_name:</label>
+          <select id="cut" name="promotion_name">
+            <option value="38">Best Savings </option>
+            <option value="43">Big Time Savings</option>
+            <option value="6">Double Down Sale </option>
+            <option value="33">Bye Bye Baby </option>
+            <option value="4">Green Light Days </option>
+            <option value="44">Big Time Discounts</option>
+            <option value="32">Coupon Spectacular</option>
+            <option value="2">Dollar Cutters</option>
+            <option value="47">Shelf Clearing Days</option>
+            <option value="19">Tip Top Savings</option>
+          </select>
+          <!-- <input type="text" id="x" name="food_category" placeholder="Enter food_category"> -->
+      </div>
+      
+           
+      
+    <div class="form-group">
+      <label for="store_city">store_city:</label>
+      <select id="cut" name="store_city">
+        <option value="7">Los Angeles</option>
+        <option value="9">Mexico City </option>
+        <option value="12">Victoria </option>
+        <option value="11">Portland</option>
+        <option value="12">San Francisco </option>
+        <option value="2">Beverly Hills </option>
+        <option value="16">Tacoma </option>
+        <option value="6">Hidalgo </option>
+      </select>
+    </div>
+      
+    <div style="clear:both;"></div>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div>      
+    <h2>
+      Predicted Cost is : {{ results }} $
+    </h2>
+  </body>
+</html>
